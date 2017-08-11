@@ -1,0 +1,73 @@
+.drawer { /* stylelint-disable */
+  position: fixed;
+  top: 0;
+  left:-300px;
+  height: 100%;
+  width: 300px;
+  background-color: #1c1330;
+  padding: 0px;
+  transition: .25s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 10px, rgba(0, 0, 0, 0.22) 0px 3px 10px;
+  z-index: 1000;
+}
+
+.drawerOpen {
+  left: 0;
+}
+
+
+.item {
+  padding: 25px;
+  text-transform: uppercase;
+  font-weight:100;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  border-bottom: dashed 1px rgba(255,255,255, .3);
+  transition: all 0.5s ease;
+  background: linear-gradient(45deg, #1c1330 0%,#1c1330 100%);;
+}
+
+
+.item:hover {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}

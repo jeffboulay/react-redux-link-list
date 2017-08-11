@@ -4,6 +4,28 @@
  * App container styles
  */
 
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
 .container {
   display: block;
+}
+
+body {
+  font-family: Roboto;
+  background-color: #160f26;
+  color: white;
+}
+
+html, body {
+  margin:0;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight:100;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }

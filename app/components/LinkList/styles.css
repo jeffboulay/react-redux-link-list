@@ -1,0 +1,22 @@
+.linkList { /* stylelint-disable */
+  margin:5%;
+}
+
+.button {
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  right: 30px;
+  top: 110px;
+  background: linear-gradient(45deg, #bf70fc 0%,#8c46f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 25px 30px;
+}
+.button:hover {
+  opacity: .8;
+}
+
+
+.icon {
+  color: #fff;
+}

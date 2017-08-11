@@ -9,59 +9,53 @@ function setupDb() {
     .value();
 
   const topic1 = {
-    name: 'libraries',
-    description: 'links to useful open source libraries',
+    name: 'React',
+    description: 'Resources for React',
   };
 
   const topic2 = {
-    name: 'apps',
-    description: 'links to new and exciting apps',
+    name: 'Redux',
+    description: 'Resources for Redux',
   };
 
   const topic3 = {
-    name: 'news',
-    description: 'links to programming related news articles',
+    name: 'Other Resources',
+    description: 'Other Libraries that we use',
   };
-
+  const topic4 = {
+    name: 'Demos',
+    description: 'Demo examples',
+  };
 
   db.get('topics').push(topic1).value();
   db.get('topics').push(topic2).value();
   db.get('topics').push(topic3).value();
+  db.get('topics').push(topic4).value();
 
   db.get('links').push({
-    description: 'The very library we are working with now',
-    url: 'https://github.com/facebook/react',
+    description: 'React Website',
+    url: 'https://facebook.github.io/react/',
     topicName: topic1.name,
     id: uuid(),
     voteCount: 0,
     voters: [],
   }).value();
   db.get('links').push({
-    description: 'Some old videos',
-    url: 'http://tagtree.io',
+    description: 'Boilerplate for creating react apps',
+    url: 'https://github.com/facebookincubator/create-react-app',
     topicName: topic1.name,
     id: uuid(),
     voteCount: 0,
     voters: [],
   }).value();
-
   db.get('links').push({
-    description: 'An app to manage your finances',
-    url: 'https://22seven.com',
+    description: 'Redux Website',
+    url: 'redux.js.org',
     topicName: topic2.name,
     id: uuid(),
     voteCount: 0,
     voters: [],
   }).value();
-  db.get('links').push({
-    description: 'Go find some news yourself!',
-    url: 'https://google.com',
-    topicName: topic3.name,
-    id: uuid(),
-    voteCount: 0,
-    voters: [],
-  }).value();
-
   return db;
 }
 
